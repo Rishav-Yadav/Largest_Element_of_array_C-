@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+float number1,number2;
+int choice;
+char ch='y';
+while(ch=='y'||ch=='Y')
+{printf("\nInput Two Number To Perform Mathematical Operations:");
+scanf("%f   %f",&number1,&number2);
+printf("\nChoose Mathematical Operator Which You Want To perform");
+printf("\n1.+");
+printf("\n2.-");
+printf("\n3.*");
+printf("\n4./");
+printf("\n");
+scanf("%d",&choice);
+switch(choice)
+{case 1:
+printf("Sum is: %f",number1+number2);
+break;
+case 2:
+printf("After Subtraction Result is is: %f",number1-number2);
+break;
+case 3:
+printf("Multipication is: %f",number1*number2);
+break;
+case 4:
+printf("Quotient is: %f",number1/number2);
+break;
+default:
+printf("You opted wrong choice !");
+}
+printf("\nWant to Perform again? y/n"); printf("\npress y or n:");scanf(" %c",&ch); printf("%c",ch);
+}
+getch();
+}
